@@ -39,22 +39,6 @@
     
 </head>
 
-<!--
-    
-    Body element is used by impress.js to set some useful class names, that will allow you to detect
-    the support and state of the presentation in CSS or other scripts.
-    
-    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
-    support features required by impress.js, so you should apply some fallback styles in your CSS.
-    It's not necessary to add it manually on this element. If the script detects that browser is not
-    good enough it will add this class, but keeping it in HTML means that users without JavaScript
-    will also get fallback styles.
-    
-    When impress.js script detects that browser supports all required features, this class name will
-    be removed.
-    
-    Another class name on body element also depends on currently active presentation step.    
--->
 <body class="impress-not-supported">
 <!--
     This fallback message is only visible when there is `impress-not-supported` class on body.
@@ -131,7 +115,7 @@
         </div>
     </div>
 
-    <div class="step slide">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>A slide with text</h1>
         <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
         <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
@@ -144,7 +128,7 @@
         </div>
     </div>
 
-    <div class="step slide">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>Bullet points</h1>
         <ul>
             <li>A slide with bullet points. This is the first point.</li>
@@ -161,13 +145,7 @@
         </div>
     </div>
 
-    <!--
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="30"` attribute, meaning that this
-        element should be rotated by 30 degrees clockwise.        
-    -->
-    <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>A blockquote &amp; image</h1>
         <img src="images/3476636111_c551295ca4_b.jpg" 
              alt="Mother Teresa holding a newborn baby" 
@@ -182,7 +160,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="800" data-rel-y="800" data-rotate="60">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>More text styles</h1>
         <p>As usual, use <em>em</em> to emphasize, <br />
            <strong>strong</strong> for strong, <u>u</u> for underline,<br />
@@ -195,7 +173,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>Motion effects 101</h1>
         <p>Items on the slide can</p>
         <p class="fly-in fly-out">Fly in</p>
@@ -225,7 +203,7 @@
         </div>
     </div>
 
-    <div id="addons" class="step slide title" data-rel-x="-300" data-rel-y="1100" data-rotate="120">
+    <div id="addons" class="step slide title" data-rel-x="1000" data-rel-y="0">
         <h2>Add-ons</h2>
         <div class="notes">
         <p>This version of impress.js includes several add-ons, striving to make this a
@@ -233,7 +211,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-800" data-rel-y="800" data-rotate="150" data-autoplay="3">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>Impress.js plugins</h1>
         <ul>
         <li>A new <a href="https://github.com/impress/impress.js/blob/master/src/plugins/README.md">plugin framework</a> allows for rich extensibility,
@@ -256,7 +234,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-1100" data-rel-y="300" data-rotate="180">
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h1>Highlight.js</h1>
         <pre><code>
         // `init` API function that initializes (and runs) the presentation.
@@ -282,34 +260,8 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-1100" data-rel-y="-300" data-rotate="210">
-        <h1>Mermaid.js</h1>
-        <div class="mermaid">
-        %% This is a comment in mermaid markup
-        graph LR
-          A(Support for<br />diagrams)
-          B[Provided by<br />mermaid.js]
-          C{Already<br />know<br />mermaid?}
-          D(<a href=&quot;http://knsv.github.io/mermaid/index.html#usage&quot;>Tutorial</a>)
-          E(Great, hope you enjoy!)
-          A-->B
-          B-->C
-          C--No-->D
-          C--Yes-->E
-          classDef startEnd fill:#fcc,stroke:#353,stroke-width:2px;
-          class A,D,E startEnd;
-        </div>
 
-        <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
-        <p>Use \(\LaTeX\), MathML or AsciiMath to properly show mathematical formula.</p>
-        <div class="notes">
-          Mermaid.js, likewise in a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, draws SVG diagrams from a MarkDown-like syntax. To learn
-          more about it <a href="http://knsv.github.io/mermaid/index.html#usage">read the fine manual</a>.
-        </div>
-    </div>
-
-    <div id="markdown" class="step slide markdown" data-rel-x="-800" data-rel-y="-800" data-rotate="240">
+    <div id="markdown" class="step slide markdown" data-rel-x="1000" data-rel-y="0">
 # Markdown.js
         
 * [Markdown.js](https://github.com/evilstreak/markdown-js) integration: for authors in a hurry!
@@ -323,7 +275,7 @@
 * [A more advanced Markdown presentation is here.](../markdown/)
     </div>
 
-    <div id="acme" class="step slide" data-rel-x="-300" data-rel-y="-1100" data-rotate="270">
+    <div id="acme" class="step slide" data-rel-x="1000" data-rel-y="0">
         <ul>
         <li>Remember, in <em>impress.js</em> the full power of HTML5, CSS3 &amp; JavaScript is always at your fingertips!</li>
         <li>For example, you can use tables, forms, or dynamic charts as you would on any web page:</li>
