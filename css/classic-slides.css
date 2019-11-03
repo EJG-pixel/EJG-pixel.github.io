@@ -235,7 +235,10 @@ img {
 */
 
 .title {
-    background-image: url(../images/background-title.png);    
+    background-image: url(../images/david_verspricht_bathseba.jpg);
+background-size:cover;
+color:black;
+    
 }
 
 .title h1,
