@@ -247,7 +247,7 @@ font-weight:bold
 }
 
 .goliat ul {margin-top:30%}
-.goliat h1, .koenig h1, .batseba h1 {text-align:left}
+.goliat h1, .koenig h1, .batseba h1, .david_bats h1 {text-align:left}
 .koenig ul {margin-top:40%}
 .goliat {
 	    background-image: url(../images/David_besiegt_Goliath.jpg);
@@ -268,6 +268,7 @@ color:red;
 font-weight:bold
 }
 
+.schluss h1{font-size:1.2em}
 
 
 
