@@ -235,11 +235,41 @@ img {
 */
 
 .title {
-    background-image: url(../images/david_verspricht_bathseba.jpg);
-background-size:cover;
-color:yellow;
+
     
 }
+
+.david_bats {
+	    background-image: url(../images/david_verspricht_bathseba.jpg);
+background-size:cover;
+color:yellow;
+font-weight:bold
+}
+
+.goliat ul {margin-top:30%}
+.goliat h1, .koenig h1, .batseba h1 {text-align:left}
+.koenig ul {margin-top:40%}
+.goliat {
+	    background-image: url(../images/David_besiegt_Goliath.jpg);
+}
+.koenig {
+	    background-image: url(../images/König_David.jpg);
+}
+.goliat, .koenig {
+background-size:cover;
+color:red;
+font-weight:bold
+}
+
+.batseba {
+	    background-image: url(../images/Batseba.jpg);
+		background-size:cover;
+color:red;
+font-weight:bold
+}
+
+
+
 
 .title h1,
 .title h2,
