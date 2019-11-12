@@ -246,7 +246,7 @@ color:yellow;
 font-weight:bold
 }
 
-.goliat ul {margin-top:30%}
+.goliat ul {margin-top:20%}
 .goliat h1, .koenig h1, .batseba h1, .david_bats h1 {text-align:left}
 .koenig ul {margin-top:40%}
 .goliat {
@@ -267,6 +267,7 @@ font-weight:bold
 color:red;
 font-weight:bold
 }
+.batseba ul {margin-top:25%}
 
 .schluss h1{font-size:1.2em}
 
