@@ -272,6 +272,14 @@ font-weight:bold
 .schluss h1{font-size:1.2em}
 
 
+.salomon {
+	    background-image: url(../images/Salomon.jpg);
+		background-size:cover;
+color:red;
+font-weight:bold
+}
+
+
 
 .title h1,
 .title h2,
